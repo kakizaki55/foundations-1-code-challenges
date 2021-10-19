@@ -54,9 +54,6 @@ Output:
 
 export function getAllDairy(arr) {
     const dairyArray = arr.filter(dairyItem => dairyItem.category === 'dairy');
-
-    console.log(dairyArray);
-
     return dairyArray;
 }
 
@@ -73,7 +70,9 @@ Output:
 */
 
 export function getAllFruitsThatCostMoreThanTwo(arr) {
-    return [];
+    const fruitMorethen = arr.filter(product => product.price > 2 && product.category === 'fruit');
+    console.log(fruitMorethen); 
+    return fruitMorethen;
 }
 
 
