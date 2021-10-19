@@ -90,7 +90,11 @@ Output:
 */
 
 export function findTheCheese(arr) {
-    return [];
+    const theCheese = arr.filter(product => 
+        product.id === 'cheese'
+    );
+    console.log(theCheese);
+    return theCheese[0];
 }
 
 
