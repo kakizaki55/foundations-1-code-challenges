@@ -71,10 +71,8 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    const stringArray = arr.map( yourPet => yourPet.name + yourPet.type
-
-    );
-    console.log(stringArray);
+    const stringArray = arr.map(yourPet => yourPet.name + yourPet.type);
+    // console.log(stringArray);
     return stringArray;
 }
 
@@ -101,5 +99,9 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
-    return [];
+    const anArrayOfArray = arr.map(yourPet => [
+        ['name', yourPet.name],
+        ['type', yourPet.type]
+    ]);
+    return anArrayOfArray;
 }
