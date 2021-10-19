@@ -54,15 +54,10 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-
-    
-    const shoutingArray = arr.map((yourPet) => {
-        console.log(yourPet);
-        yourPet.name = yourPet.name.toUpperCase();
-        return yourPet;
-        
-      
-    });
+    const shoutingArray = arr.map(yourPet => ({
+        name: yourPet.name.toUpperCase(),
+        type: yourPet.type,
+    }));
     return shoutingArray;
    
     
@@ -76,7 +71,11 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    const stringArray = arr.map( yourPet => yourPet.name + yourPet.type
+
+    );
+    console.log(stringArray);
+    return stringArray;
 }
 
 /*
