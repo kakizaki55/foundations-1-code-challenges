@@ -21,6 +21,7 @@ export function makeArrayOfNames(arr) {
 
     arr.forEach(newArr => {
         arrayNamesAll.push(newArr.name);
+        // console.log(newArr);
     });
 
     return arrayNamesAll; 
@@ -34,7 +35,11 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    return [];
+    let arrayNames = [];
+    arr.forEach(names =>{
+        arrayNames.unshift(names.type);
+    });
+    return arrayNames;
 }
 
 /*
