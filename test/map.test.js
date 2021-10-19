@@ -50,14 +50,14 @@ test('should return all objects with an added isHungry property equal to true', 
     expect.deepEqual(actual, expected);
 });
 
-skip('should return a shouting array', (expect) => {
+test('should return a shouting array', (expect) => {
     // const pets = [
     //     { name: 'scooter', type: 'puppy' },
     //     { name: 'sassy', type: 'puppy' },
     //     { name: 'legzo', type: 'frog' },
     //     { name: 'fluff', type: 'squirrel' },
     // ];
-    //Arrange
+    // //Arrange
     // Set up your arguments and expectations
     const expected = [
         { name: 'SCOOTER', type: 'puppy' },

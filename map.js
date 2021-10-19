@@ -19,11 +19,9 @@ Output:
 */
 
 export function makeArrayOfNamesWithMap(arr) {
-    // const nameArray = arr.map(pet => {
-    //     return pet.name;
-    // });
-    // return nameArray;
-    return arr.map(petObj => petObj.name);
+    const nameArray = arr.map(pet => pet.name);
+    return nameArray;
+    // return arr.map(petObj => petObj.name);
 }
 
 /*
@@ -37,35 +35,37 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-   
-    // const hungryArray = arr.map(pet =>{
-    //     pet.isHungry = true;
-    //     return pet;
-    // });
-    // return hungryArray;
-    return arr.map(pet => ({ ...pet, isHungry : true }));
+    return arr.map(pet => ({
+        name: pet.name,
+        type: pet.type,
+        isHungry: true 
+    }));
+    
 }
 
 /*
 Output:
 
 [
-    { name: 'SPOT', type: 'dog' },
+    { name: 'NSPOT', type: 'dog' },
     { name: 'ROVER', type: 'dog' },
     { name: 'JUMPY', type: 'frog' },
-    { name: 'EINSTEIN', type: 'cat' },
+    { name: 'EINSTEI', type: 'cat' },
 ]*/
 
 export function makeShoutingArray(arr) {
 
-    let shoutingArray = [];
-    arr.map(yourPet =>{
-        yourPet.name = yourPet.name.toUpperCase();
-
-        shoutingArray.push(yourPet);
+    
+    const shoutingArray = arr.map((yourPet) => {
         console.log(yourPet);
+        yourPet.name = yourPet.name.toUpperCase();
+        return yourPet;
+        
+      
     });
     return shoutingArray;
+   
+    
 }
 
 
