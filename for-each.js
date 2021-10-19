@@ -17,7 +17,14 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return [];
+    let arrayNamesAll = [];
+
+    arr.forEach(newArr => {
+        arrayNamesAll.push(newArr.name);
+    });
+
+    return arrayNamesAll; 
+
 }
 
 /*
