@@ -54,6 +54,13 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return [];
+    let spanishArray = [];
+    arr.forEach(each =>{
+        spanishArray.push({
+            nombre: `${each.name}`,
+            tipo: `${each.type}`,
+        });
+    });
+    return spanishArray;
 }
 
