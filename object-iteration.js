@@ -24,7 +24,6 @@ etc
 */
 
 export function makeWeirdStringFromKeys(someObject) {
-    console.log(someObject);
     let keyArray = Object.keys(someObject);
     keyArray = keyArray.join('');
     return keyArray;
@@ -41,6 +40,12 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
+
+    let key = Object.keys(someObject);
+    const uppercased = key.map(theKey => theKey.toUpperCase());
+    console.log(uppercased);
+    
+    
     
 }
 
